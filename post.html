@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <script src="js/nav.js" defer></script>
+    <script src="js/api.js" defer></script>
+    <script src="js/enlarge.js" defer></script>
+    <!-- Hotjar Tracking Code for Journey with rob -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3870210,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  </head>
+  <body>
+    <header>
+      <button id="hamburger-menu" aria-label="Open navigation menu">
+        <img src="icons/Hamburger.png" alt="Menu" />
+      </button>
+      <h1>Journey With Rob</h1>
+      <button id="home-button" class="image-button">
+        <a href="index.html" aria-label="Home">
+          <img src="icons/Home.png" alt="Home button" />
+        </a>
+      </button>
+    </header>
+    <nav id="menu" class="menu-hidden">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="all_posts.html">All Posts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <article class="post">
+        <header class="post-header">
+          <h2 class="post-title"></h2>
+          <div class="post-meta">
+            <span class="author"></span> |
+            <time datetime=""></time>
+          </div>
+        </header>
+        <figure class="post-image">
+          <img src="" alt="Post Image" /> 
+          <figcaption></figcaption>
+        </figure>
+        <section class="post-content">
+        </section>
+      </article>
+      <div id="imageOverlay" class="overlay" style="display: none">
+        <img src="" alt="Enlarged Image" id="overlayImage" />
+      </div>      
+        <footer class="post-footer">
+            <section class="comments">
+              <h3>Comments</h3>
+              <ul class="comment-list">
+                <!-- Example Comment -->
+                <li class="comment">
+                  <div class="comment-body">
+                    <div class="comment-meta">
+                      <span class="comment-author">John Doe</span>
+                      <time datetime="2024-02-15T09:24"
+                        >February 15, 2024 at 9:24 am</time
+                      >
+                    </div>
+                    <div class="comment-content">
+                      <p>This is an example comment. Great post!</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="comment-form">
+                <h4>Leave a Comment</h4>
+                <form>
+                  <div class="form-group">
+                    <label for="comment-name">Name:</label>
+                    <input type="text" id="comment-name" name="name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="comment-email">Email:</label>
+                    <input
+                      type="email"
+                      id="comment-email"
+                      name="email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="comment-message">Comment:</label>
+                    <textarea
+                      id="comment-message"
+                      name="comment"
+                      rows="5"
+                      required
+                    ></textarea>
+                  </div>
+                  <button type="submit">Post Comment</button>
+                </form>
+              </div>
+            </section>
+          </section>
+        </footer>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-section copyright">
+          © 2024 Jouerney With Rob. All rights reserved.
+        </div>
+        <div class="footer-section social-icons">
+          <a href="https://instagram.com" target="_blank"
+            ><img src="Images/instagram.png" alt="Instagram"
+          /></a>
+          <a href="https://facebook.com" target="_blank"
+            ><img src="Images/facebook.png" alt="Facebook"
+          /></a>
+          <a href="your-link-for-x" target="_blank"
+            ><img src="Images/x.png" alt="X"
+          /></a>
+        </div>
+        <div class="footer-section"></div>
+      </div>
+    </footer>
+  </body>
+</html>

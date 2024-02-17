@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
+    <script src="js/nav.js" defer></script>
+    <script src="js/carousel.js" defer></script>
+    <!-- Hotjar Tracking Code for Journey with rob -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3870210, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
+  </head>
+  <body>
+    <header>
+      <button id="hamburger-menu" aria-label="Open navigation menu">
+        <img src="icons/Hamburger.png" alt="Menu" />
+      </button>
+      <h1>Contact Me</h1>
+      <button id="home-button" class="image-button">
+        <a href="index.html" aria-label="Home">
+          <img src="icons/Home.png" alt="Home button" />
+        </a>
+      </button>
+    </header>
+    <nav id="menu" class="menu-hidden">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="all_posts.html">All Posts</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div class="contact-page">
+        <section class="contact-intro">
+          <h2>Let's Connect!</h2>
+          <p>
+            I'm always open to discussing new projects, creative ideas, or
+            opportunities to be part of your visions. Whether you have a
+            question, a proposal, or just want to say hi, my inbox is always
+            open, and I'll get back to you as soon as possible.
+          </p>
+        </section>
+        <form class="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+      <div class="contact-image">
+        <img src="Images/happyman.jpg" alt="A happy man" />
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div class="footer-section copyright">
+          © 2024 Jouerney With Rob. All rights reserved.
+        </div>
+        <div class="footer-section social-icons">
+          <a href="https://instagram.com" target="_blank"
+            ><img src="Images/instagram.png" alt="Instagram"
+          /></a>
+          <a href="https://facebook.com" target="_blank"
+            ><img src="Images/facebook.png" alt="Facebook"
+          /></a>
+          <a href="your-link-for-x" target="_blank"
+            ><img src="Images/x.png" alt="X"
+          /></a>
+        </div>
+        <div class="footer-section"></div>
+      </div>
+    </footer>
+  </body>
+</html>

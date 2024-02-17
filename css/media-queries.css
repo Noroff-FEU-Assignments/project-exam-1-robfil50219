@@ -1,0 +1,58 @@
+@media (max-width: 768px) {
+    .header, .footer-grid, main {
+      grid-template-columns: 1fr; 
+    }
+  
+    .image-group img {
+      width: 100%; 
+    }
+  
+    .main {
+      grid-template-columns: 1fr; 
+    }
+
+    .body {
+        font-size: 14px; 
+      }
+
+      #menu {
+        width: 100%; 
+      }
+    
+      .button, .form-group input, .form-group textarea {
+        padding: 8px; 
+      }
+
+     .new-post-content img, .post img {
+        width: 100%; 
+        height: auto;  
+  }
+
+  .contact-page {
+    width: 90%; 
+    transform: none; 
+    position: relative; 
+    margin: 20px auto; 
+   
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 8px; 
+  }
+
+  
+  .form-group label {
+    font-size: 14px; 
+  }
+
+  .about-content, .profile-photo {
+    width: 100%; 
+    padding: 10px; 
+  }
+
+  .carousel {
+    display: none;
+  }
+
+}

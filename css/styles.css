@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Nunito+Sans:wght@400;600;700&display=swap');
+
+
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    display: grid;
+    border-bottom: 1px solid black;
+    grid-template-columns: auto 1fr auto; 
+    height: 100px;
+    align-items: center; 
+    justify-items: center;
+    background-color: #87DCCD; 
+    color: black; 
+    padding: 10px 20px; 
+    text-align: center; 
+    grid-row-start: 1;
+
+}
+
+.site-footer {
+  background-color: #87DCCD; 
+  padding: 20px 0;
+  grid-row-start: 0;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 15px; 
+}
+
+.footer-section {
+  text-align: center; 
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+.social-icons img {
+  height: 40px; 
+  width: auto;
+}
+
+/* Style for copyright text */
+.copyright {
+  text-align: left; 
+}
+
+
+h1 {
+    text-align: center; 
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700; 
+    font-size: 3em; 
+}
+
+#menu {
+    display: none;
+}
+
+
+
+/* CSS for the main content area */
+main {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+  padding: 20px; 
+}
+
+
+/*Button Syles*/
+#hamburger-menu img {
+    width: 30px; 
+    height: 30px; 
+}
+#hamburger-menu {
+    
+    justify-self: start; 
+}
+
+#home-button {
+    justify-self: end; 
+}
+
+#home-button img {
+    width: 30px; 
+    height: 30px; 
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+    
+}
+
+/* Style for the hamburger menu button */
+#hamburger-menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px; 
+}
+
+#hamburger-menu img {
+  width: 30px; 
+  height: auto;
+}
+
+/* Style for the home button */
+#home-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+#home-button img {
+  width: 30px; 
+  height: auto;
+}
+
+/* Removing default styles from the link inside the home button */
+#home-button a {
+  text-decoration: none;
+  color: inherit; 
+  display: block; 
+}
+
+/* Navigation styling  */
+#menu {
+    display: none;
+    border-right: 2px solid black; 
+    border-bottom: 2px solid black;
+    position: absolute;
+    left: 0;
+    width: 100px; 
+    background-color: rgba(255, 255, 255); 
+    transition: transform 0.3s; 
+    z-index: 2; 
+    border-radius: 0 0 10px 0;
+}
+
+#menu ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    padding: 10px;
+}
+
+#menu ul li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+/*carousel styles*/
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-bottom: 1px solid black;
+  }
+  
+  .image-group img {
+    width: 400px;
+    height: 300px;
+    transition: opacity 1s ease, transform 0.5s ease; 
+    margin: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+    border: 1px solid black;
+    overflow: hidden;
+
+  }
+  
+  .carousel img:hover {
+    transform: scale(1.1);
+    z-index: 2;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8); 
+  }
+  
+  .image-group:not(.active) {
+    display: none;
+  }
+  
+
+/* CSS for the new post */
+.new-post-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.new-post-content {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.new-post-content h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.new-post-content img {
+  max-width: 100%;
+  height: auto;
+  max-height: 600px;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.new-post-content img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+.new-post-content p {
+  color: #666;
+}
+
+/* Styling for links */
+.post-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* General Styles for the Blog Post */
+.post {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.post-header,
+.post-footer {
+  margin-bottom: 20px;
+}
+
+.post-title {
+  font-size: 24px;
+  color: #333;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Styles for the Post Image and Caption */
+.post-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.post-image figcaption {
+  font-size: 12px;
+  color: #888;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Styles for the Post Content */
+.post-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+}
+
+.post-content p {
+  margin-bottom: 15px;
+}
+
+/* Comments Section Styling */
+.comments {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 20px;
+}
+
+.comment-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.comment {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.comment-author {
+  font-weight: bold;
+}
+
+.comment-content {
+  margin-top: 5px;
+}
+
+/* Form Styles */
+.comment-form {
+  margin-top: 20px;
+}
+
+.comment-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.comment-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.comment-form button:hover {
+  background-color: #0056b3;
+}
+
+
+/*All Posts*/ 
+
+.all-posts-main {
+  display: flex;
+}
+
+
+.all-posts-container {
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; /
+}
+
+.all-posts-container .post {
+  width: 300px; 
+  margin: 10px; 
+}
+
+.all-posts-container .post img {
+  max-width: 100%; 
+  height: auto; 
+}
+#loadMoreBtn,
+#showLessBtn {
+  width: 120px; 
+  height: 40px; 
+  background-color: #007bff; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 10px auto; 
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; 
+}
+
+.overlay img {
+  max-width: 90%;
+  max-height: 80%;
+}
+
+#loadMoreBtn:hover,
+#showLessBtn:hover {
+  background-color: #0056b3; 
+}
+
+ 
+  /* YouTube Video */
+.video-responsive {
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+.video-responsive iframe {
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+#video-player {
+  margin: 20px;
+}
+  
+
+/*Contact Us*/ 
+
+.contact-page {
+  margin: 20px auto; 
+  padding: 20px;
+  text-align: center;
+  position: relative; 
+  max-width: 600px; 
+  box-sizing: border-box; 
+}
+
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+  /*about me*/ 
+
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.about-content h1, .about-content h2 {
+    color: #333;
+}
+
+.profile-photo {
+    max-width: 200px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.about-me, .my-mission, .my-work, .contact-me {
+    margin-bottom: 40px;
+}
+
+  
+
+
